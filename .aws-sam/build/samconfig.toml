@@ -1,0 +1,12 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "neo-loan"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-l3qjr6ev1yg8"
+s3_prefix = "neo-loan"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "WebsiteS3BucketName=\"blog-website-bucket\" ConnectFlowId=\"bd6705cf-0324-4a7d-bed2-754dae259568\" ConnectInstanceId=\"21cde7e4-178f-4ef8-ac8e-76054b1467f6\" cloudFrontPriceClass=\"PriceClass_100\" LexBotName=\"Loan_App_Bot\""
+image_repositories = []
